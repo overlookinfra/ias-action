@@ -1,0 +1,6 @@
+# action.yml
+name: 'ias-action'
+description: 'Trigger ias service for catalog diffing on PRs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
