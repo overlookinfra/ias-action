@@ -8,7 +8,7 @@ echo "Working branch: $current_branch"
 echo "Parent branch: $parent_branch"
 
 
-curl_output=$(curl --location --request POST 'http://34.90.150.171:8003/ias-manager/v1/catalogsDiff' \
+curl_output=$(curl --location --request POST 'https://ias.puppet-strings.com/ias-manager/v1/catalogsDiff' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "environments": {
