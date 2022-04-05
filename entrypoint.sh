@@ -21,6 +21,9 @@ curl_output=$(curl --location --request POST 'https://ias.puppet-strings.com/ias
     }
 }')
 
+echo "DEBUG: result is:"
+echo $curl_output
+
 echo "Diff is: "
 echo $curl_output | jq .
 
